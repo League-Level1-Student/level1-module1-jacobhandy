@@ -2,8 +2,17 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.net.MalformedURLException;
+import javax.swing.*;
 
-public class BinaryConverter {
+public class BinaryConverter implements MouseListener {
+	JTextField inputText = null;
+	JLabel answerLabel = null;
+
+
+	
 	public static void main(String[] args) {
 		BinaryConverter form = new BinaryConverter();
 		form.getGoing();
@@ -21,13 +30,13 @@ public class BinaryConverter {
 	    answer.setVisible(true);
 	    frame.add(answer);
 	    frame.pack();
+	    
 	}
-	
-	
-	
-	
-	
-	
+	 
+	 
+	   
+	 
+	 
 	String convert(String input) {
          if(input.length() != 8){
               JOptionPane.showMessageDialog(null, "Enter 8 bits, silly!!!");
@@ -47,4 +56,28 @@ public class BinaryConverter {
               return "-";
          }
     }
+
+	@Override
+	public void mouseEntered(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
 }
